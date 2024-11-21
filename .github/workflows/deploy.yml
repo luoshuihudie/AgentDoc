@@ -19,7 +19,9 @@ jobs:
           node-version: '10'
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli@2.3.2
+        run: |
+          npm install -g gitbook-cli@2.3.2
+          npm install gitbook-plugin-hint --save
 
       - name: Install GitBook plugins and build
         run: |
