@@ -19,7 +19,7 @@ jobs:
           node-version: '14'
 
       - name: Install GitBook CLI
-        run: npm install -g gitbook-cli
+        run: npm install -g gitbook-cli@2.3.2
 
       - name: Install GitBook plugins and build
         run: |
